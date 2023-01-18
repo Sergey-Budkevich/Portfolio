@@ -1,0 +1,31 @@
+.header{
+  width: 100%;
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+.header__navigation-items{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  column-gap: 1.25rem;
+  text-align: center;
+}
+
+.header__navigation-item:hover{
+  transform: scale(1.1);
+}
+
+.header__navigation-item-link{
+  padding: 0.3125rem;
+  color: var(--font-color-white);
+  background: linear-gradient(to right, transparent, transparent),linear-gradient(to right, red, yellow, green);
+  background-size: 100% 0.1875rem, 0 0.1875rem;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.header__navigation-item-link:hover{
+  background-size: 0 0.1875rem, 100% 0.1875rem;
+}

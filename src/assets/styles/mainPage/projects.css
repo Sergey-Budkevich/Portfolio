@@ -1,0 +1,128 @@
+.projects{
+  padding: 0 0 10rem;
+}
+.projects__content{
+  font-family: var(--first-font);
+  color: var(--font-color-white);
+}
+
+.projects__title{
+  font-size: 2rem;
+  font-weight: var(--semi-bold-font-weight);
+  text-align: center;
+}
+
+.projects__slider{
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.slider__line{
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1.7s;
+}
+
+.slider__item{
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  min-width: 100%;
+  background: rgba(191, 249, 221, 0.4);
+}
+
+.slider__item-image{
+  max-width: 50%;
+  width: 100%;
+  /* position: relative; */
+}
+
+.slider__item-image img{
+  width: 100%;
+  height: 100%;
+}
+/* .slider__item-image::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/project_study-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.slider__item-description{
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 5%;
+}
+
+.item-description__text{
+  margin-top: 2rem;
+  font-weight: var(--normal-font-weight);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.item__description-link{
+  margin-top: 1.5rem;
+  font-weight: var(--normal-font-weight);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: inline-block;
+  padding: 0.3rem 0;
+  width: 7rem;
+  background: linear-gradient(233.48deg, #F9A85D 12.64%, #FE5C73 107.8%);
+  border-radius: 30px;
+}
+.item__description-link:hover{
+  -webkit-box-shadow: 0.25rem 0.25rem 0.375rem 0.25rem rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0.25rem 0.25rem 0.375rem 0.25rem rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0.25rem 0.25rem 0.375rem 0.25rem rgba(0, 0, 0, 0.2) inset;
+}
+.item__description-link:active{
+  opacity: 0.8;
+}
+
+.slider__button{
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.35)
+}
+.slider__button:hover{
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(255, 255, 255, 0.2) inset;
+  -moz-box-shadow: 2px 2px 5px 3px rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 2px 2px 5px 3px rgba(255, 255, 255, 0.2) inset;
+}
+.slider__button:active{
+  opacity: 0.8;
+}
+.slider__button--right{
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+.slider__button--left{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+}

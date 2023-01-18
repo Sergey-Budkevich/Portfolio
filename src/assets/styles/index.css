@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;700&display=swap');
+@import url('./mainPage/header.css');
+@import url('./mainPage/about.css');
+@import url('./mainPage/projects.css');
+@import url('./mainPage/footer.css');
+@import url('./mainPage/sidebar.css');
+
+:root{
+
+  --first-font: 'Montserrat';
+  --second-font: 'Rubik';
+
+  --normal-font-weight: 400;
+  --medium-font-weight: 500;
+  --semi-bold-font-weight: 600;
+  --bold-font-weight: 700;
+
+
+  --font-color-white: #ffffff;
+  --font-color-black: #000000;
+
+
+
+  --background-color-dark-blue: #0F103F;
+}
+
+html{font-size: 16px;}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--first-font);
+  font-size: 1rem;
+  font-weight: var(--normal-font-weight);
+  color: var(--font-color-white);
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #0F103F;
+  overflow-x: hidden;
+}
+
+.content{
+  max-width: 75rem;
+  padding: 0 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: var(--font-color-white);
+}
+
+button{cursor: pointer;}
+li{list-style: none;}
+
+
+
