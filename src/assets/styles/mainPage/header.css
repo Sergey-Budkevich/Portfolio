@@ -2,6 +2,8 @@
   width: 100%;
   padding: 1rem 0;
   background-color: transparent;
+  position: relative;
+  z-index: 999;
 }
 
 .header__navigation-items{

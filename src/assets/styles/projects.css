@@ -1,0 +1,90 @@
+@import url('./index.css');
+
+
+.works{
+  padding: 5rem 0 8rem;
+  text-align: center;
+}
+
+.works__title{
+  font-size: 3rem;
+  font-family: var(--second-font);
+}
+
+.works__cards{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-template-areas: 
+  "gazebos finance study"
+  "activebox finance first";
+}
+.works__card:nth-of-type(1){
+  grid-area: gazebos;
+}
+
+.works__card:nth-of-type(2){
+  grid-area: finance;
+  display: flex;
+  flex-direction: column;
+}
+.works__card:nth-of-type(2) img{
+  width: 100%;
+  height: 50%;
+}
+.works__card:nth-of-type(3){
+  grid-area: study;
+}
+.works__card:nth-of-type(4){
+  grid-area: activebox;
+}
+
+.works__card:nth-of-type(6){
+  grid-area: first;
+}
+
+.works__card{
+  position: relative;
+}
+.works__card:hover .works__card-info{
+  opacity: 1;
+  transition-duration: 0.8s;
+}
+
+.works__card img{
+  width: 100%;
+  height: 100%;
+}
+
+.works__card-info{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #ffdf6ae6 0%, #e98283e6 100%);
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.works__card-description{
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.works__card-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.works__card-link svg{
+  width: 1.3rem;
+  height: 1.3rem;
+}
