@@ -2,7 +2,7 @@
 
 
 .candidate{
-  padding: 10rem 0 8rem;
+  padding: 8rem 0;
 }
 
 .candadate__content{
@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 .candadate__content::before{
   content: '';

@@ -1,0 +1,70 @@
+@import url('./index.css');
+
+.contact{
+  padding: 3rem 0;
+}
+
+.contact__cards{
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 2rem 1rem;
+  background-color: rgba(47, 47, 138, 0.8);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact__cards::before{
+  content: '';
+  width: 80rem;
+  height: 70rem;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -20rem;
+  left: -19rem;
+  z-index: -1;
+}
+
+.contact__cards-title{
+  text-align: center;
+}
+
+
+.contact__card{
+  padding: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  width: 70%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact__card:nth-of-type(1){
+  margin-top: 2rem;
+}
+
+.contact__card-logo{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.contact__card-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+}
+.contact__card-linl-line{
+  width: 0;
+  height: 2px;
+}
+.contact__card-link:hover .contact__card-linl-line{
+  transition-property: width;
+  transition-duration: 1s;
+  width: 100%;
+  background-color: rgb(255, 223, 106);
+}
