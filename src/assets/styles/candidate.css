@@ -1,6 +1,5 @@
 @import url('./index.css');
 
-
 .candidate{
   padding: 8rem 0;
 }
@@ -52,8 +51,10 @@
 }
 
 .candidate__link-btn{
+  font-family: var(--second-font);
+  font-size: 1rem;
   background: linear-gradient(233.48deg, #F9A85D 12.64%, #FE5C73 107.8%);
-  border-radius: 30px;
+  border-radius: 1.9rem;
   padding: 0.5rem 0;
   width: 10rem;
   color: var(--font-color-white);
@@ -70,3 +71,12 @@
 .candidate__link-btn:active{
   opacity: 0.8;
 }
+
+/* @media (max-width: 1024px){
+  .candadate__content::before{
+    width: 45rem;
+    height: 45rem;
+    top: -22rem;
+    left: -18rem;
+  }
+} */

@@ -1,6 +1,5 @@
 const sidebar = document.querySelector('.sidebar');
 const bodyWidth = document.querySelector('.sidebar__body').offsetWidth;
-// const sidebarBtn = document.querySelector('.sidebar__btn');
 let position = parseInt(window.getComputedStyle(sidebar, null).getPropertyValue('left'));
 
 

@@ -1,7 +1,5 @@
 .about{
-  padding: 11rem 0;
-  font-family: var(--first-font);
-  color: var(--font-color-white);
+  padding: 10rem 0;
 }
 
 .about .about__content{
@@ -9,7 +7,6 @@
   width: 100%;
   text-align: center;
   position: relative;
-
 }
 
 .about__content::before{
@@ -39,17 +36,14 @@
 }
 
 .about__title{
-  font-family: var(--first-font);
   font-weight: var(--semi-bold-font-weight);
   font-size: 3rem;
   line-height: 4rem;
-  color: var(--font-color-white);
 }
 
 .about__links{
   margin-top: 2rem;
 }
-
 
 .about__list{
   display: flex;
@@ -61,10 +55,11 @@
 }
 
 .about__link{
+  font-family: var(--second-font);
   padding: 0.6rem 0;
   display: inline-block;
   width: 14rem;
-  border-radius: 30px;
+  border-radius: 1.9rem;
 }
 .about__link:active{
   opacity: 0.8;
@@ -84,5 +79,8 @@
   background: linear-gradient(101.81deg, #C961DE 25.84%, #3645A0 98.95%);
 }
 
-
-
+@media (max-width: 768px){
+  .about{
+    padding: 2rem 0 0;
+  }
+}

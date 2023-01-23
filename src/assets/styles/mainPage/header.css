@@ -31,3 +31,22 @@
 .header__navigation-item-link:hover{
   background-size: 0 0.1875rem, 100% 0.1875rem;
 }
+
+@media (max-width: 768px){
+  .header__navigation{
+    padding: 1rem 0;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+  }
+  .header__navigation-items{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .header__navigation-item-link{
+    color: var(--font-color-black);
+    background: none;
+  }
+}
