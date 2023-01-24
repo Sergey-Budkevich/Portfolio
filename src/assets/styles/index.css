@@ -39,7 +39,7 @@ body{
   line-height: 1.4rem;
   color: var(--font-color-white);
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
   background-color: var(--background-color-dark-blue);
   overflow-x: hidden;
 
@@ -63,6 +63,10 @@ li{list-style: none;}
 
 @media (max-width: 768px){
 html{font-size: 12px;}
+main{
+  width: 100vw;
+  overflow: hidden;
+}
 body{
   display: flex;
   flex-direction: column;

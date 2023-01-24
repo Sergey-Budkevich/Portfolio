@@ -7,6 +7,7 @@
   width: 100%;
   text-align: center;
   position: relative;
+  
 }
 
 .about__content::before{
@@ -82,5 +83,6 @@
 @media (max-width: 768px){
   .about{
     padding: 2rem 0 0;
+    overflow-wrap: break-word;
   }
 }
