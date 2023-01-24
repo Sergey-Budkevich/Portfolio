@@ -31,22 +31,58 @@
 .header__navigation-item-link:hover{
   background-size: 0 0.1875rem, 100% 0.1875rem;
 }
-
+.header__menu{
+  display: none;
+}
 @media (max-width: 768px){
+  .header{
+    position: fixed;
+  }
   .header__navigation{
-    padding: 1rem 0;
-    width: 100%;
     position: absolute;
-    background-color: #fff;
     top: 0;
     left: 0;
+    width: 100%;
   }
   .header__navigation-items{
+    display: none;
     flex-direction: column;
+    align-items: center;
     row-gap: 1rem;
+    background: #fff;
+  }
+  .header__navigation-item{
+    width: 100%;
+  }
+  .header__navigation-item:hover{
+    background-color: rgb(120, 120, 249);
   }
   .header__navigation-item-link{
-    color: var(--font-color-black);
-    background: none;
+    display: block;
+    width: 100%;
+    background : none;
+    color: black;
+  }
+
+
+  .header__menu{
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+  .header__menu svg{
+    width: 1rem;
+    height: 1rem;
+    display: block;
+  }
+  .header__menu--close{
+    display: none;
+    background-color: #fff;
+    border-radius: 0.2rem;
   }
 }
