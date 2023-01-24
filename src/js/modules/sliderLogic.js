@@ -1,5 +1,3 @@
-// const btnNext = document.querySelector('.slider__button--right');
-// const btnPrev = document.querySelector('.slider__button--left');
 const sliderLine = document.querySelector('.slider__line');
 let itemWidth = 100;
 let offset = 0;

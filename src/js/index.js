@@ -12,8 +12,6 @@ const btnOpen = document.querySelector('.profile__description-btn');
 const btnClose = document.querySelector('.popup__btn');
 
 
-
-
 btnNext && nextSlider(btnNext);
 btnPrev && prevSlider(btnPrev);
 

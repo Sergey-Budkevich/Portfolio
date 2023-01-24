@@ -71,12 +71,3 @@
 .candidate__link-btn:active{
   opacity: 0.8;
 }
-
-/* @media (max-width: 1024px){
-  .candadate__content::before{
-    width: 45rem;
-    height: 45rem;
-    top: -22rem;
-    left: -18rem;
-  }
-} */
